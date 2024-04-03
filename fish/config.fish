@@ -34,6 +34,8 @@ set PATH $PATH $HOME/.cargo/env
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
 
+# Andorid Sdk
+set -g ANDROID_HOME $HOME/Android/Sdk
 # Go
 set -g GOPATH $HOME/go
 set -gx PATH $GOPATH/bin $PATH
