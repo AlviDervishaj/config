@@ -42,7 +42,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensure_installed = { 'tsserver', 'rust_analyzer', 'lua_ls' },
+  ensure_installed = { 'tsserver', 'rust_analyzer', 'lua_ls', 'gopls', 'templ' },
   handlers = {
     lsp.default_setup,
     lua_ls = function()
@@ -52,3 +52,4 @@ require('mason-lspconfig').setup({
     end,
   },
 })
+vim.filetype.add({ extension = { templ = "templ" } })
