@@ -1,5 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
+
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -20,6 +21,7 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   -- Plenary
   use "nvim-lua/plenary.nvim"
+  use "ThePrimeagen/vim-apm"
   -- Harpoon
   use {
     "ThePrimeagen/harpoon",
