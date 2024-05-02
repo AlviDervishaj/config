@@ -36,6 +36,8 @@ set -gx PATH node_modules/.bin $PATH
 
 # Andorid Sdk
 set -g ANDROID_HOME $HOME/Android/Sdk
+set -gx PATH $ANDROID_HOME/emulator $PATH
+set -gx PATH $ANDROID_HOME/platform-tools $PATH
 # Go
 set -g GOPATH $HOME/go
 set -gx PATH $GOPATH/bin $PATH
