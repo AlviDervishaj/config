@@ -5,7 +5,7 @@ options.guicursor = ""
 -- Disable mouse
 options.mouse = ""
 -- Clipboard shared
-options.clipboard:append {'unnamed', 'unnamedplus'}
+options.clipboard:append { 'unnamed', 'unnamedplus' }
 
 -- Line Numbers
 options.nu = true
@@ -40,7 +40,3 @@ options.scrolloff = 10
 options.signcolumn = "yes"
 options.isfname:append("@-@")
 options.updatetime = 50
-
-
-
-

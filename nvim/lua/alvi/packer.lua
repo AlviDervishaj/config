@@ -9,6 +9,10 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
+  use {
+    'luckasRanarison/tailwind-tools.nvim',
+    requires = { { 'nvim-treesitter/nvim-treesitter' } }
+  }
   -- Rose Pine Colorscheme
   use {
     'rose-pine/neovim',
