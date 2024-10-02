@@ -1,0 +1,33 @@
+{
+  "prefs": {
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-11-01T14:13:30.432758Z\",\"is_unlimited\":false}",
+    "Theme": "\"Dark\"",
+    "FontSize": "15.0",
+    "AIAutoDetectionEnabled": "true",
+    "InputAutodetectionBannerDismissed": "true",
+    "WorkflowsBoxOpen": "true",
+    "ChangelogVersions": "{\"v0.2024.09.24.08.02.stable_01\":true}",
+    "SelectedSystemThemes": "{\"light\":\"Light\",\"dark\":\"Dark\"}",
+    "WelcomeTipsFeaturesUsed": "[{\"Action\":\"ThemePicker\"},{\"Hint\":\"CreateBlock\"}]",
+    "StartupShellOverride": "null",
+    "AliasExpansionBannerSeen": "true",
+    "CrashReportingEnabled": "true",
+    "HasDismissedWarpDriveWelcome": "true",
+    "AgentModeOnboardingBlockShown": "true",
+    "SameLinePromptBlockState": "\"DoNotShow\"",
+    "SystemTheme": "false",
+    "NotebookFontSize": "14.0",
+    "HonorPS1": "false",
+    "SavedPrompt": "{\"CustomChipSelection\":{\"chips\":[{\"chip\":\"CondaEnvironment\",\"config\":{}},{\"chip\":\"VirtualEnvironment\",\"config\":{}},{\"chip\":\"Username\",\"config\":{}},{\"chip\":\"WorkingDirectory\",\"config\":{}},{\"chip\":\"ShellGitBranch\",\"config\":{}},{\"chip\":\"GitDirtyFiles\",\"config\":{}}],\"same_line_prompt_enabled\":false,\"separator\":\"PercentSign\"}}",
+    "FontName": "\"MesloLGL Nerd Font\"",
+    "LineHeightRatio": "1.3",
+    "WorkingDirectoryConfig": "{\"advanced_mode\":false,\"global\":{\"mode\":\"CustomDir\",\"custom_dir\":\"~/projects/\"},\"split_pane\":{\"mode\":\"PreviousDir\",\"custom_dir\":\"\"},\"new_tab\":{\"mode\":\"PreviousDir\",\"custom_dir\":\"\"},\"new_window\":{\"mode\":\"PreviousDir\",\"custom_dir\":\"\"}}",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "Spacing": "\"Normal\"",
+    "TelemetryEnabled": "true",
+    "OverrideOpacity": "76",
+    "AIRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":2,\"next_refresh_time\":\"2024-11-01T14:13:30.432758Z\",\"is_unlimited\":false}",
+    "ExperimentId": "381b0773-ec39-4bce-9d18-f5348e4e6dc3",
+    "HasAutoOpenedWelcomeFolder": "true"
+  }
+}
