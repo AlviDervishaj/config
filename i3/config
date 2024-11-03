@@ -65,6 +65,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec wezterm
+bindsym $mod+w exec warp-terminal
+bindsym $mod+m exec teams
+bindsym $mod+b exec firefox
 # Execute Gimp
 bindsym $mod+g exec gimp
 # kill focused window
