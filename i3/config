@@ -66,7 +66,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec wezterm
 bindsym $mod+w exec warp-terminal
-bindsym $mod+m exec teams
+bindsym $mod+m exec i3lock
 bindsym $mod+b exec firefox
 # Execute Gimp
 bindsym $mod+g exec gimp
@@ -221,8 +221,8 @@ client.urgent            $peach    $base  $peach   $overlay0  $peach
 client.placeholder       $overlay0 $base  $text    $overlay0  $overlay0
 client.background        $base
 bar {
-    status_command i3status --config ~/.config/i3/i3status.conf
-    separator_symbol "//"
+    status_command i3status
+    separator_symbol "||"
     tray_output tray
     i3bar_command i3bar --transparency
     colors {
