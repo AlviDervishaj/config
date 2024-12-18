@@ -38,12 +38,14 @@ return {
             capabilities = capabilities
           }
         end,
+        -- Deno Ls Config
         denols = function()
           local nvim_lsp = require('lspconfig')
           nvim_lsp.denols.setup {
             root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
           }
         end,
+        -- Typescript config
         ts_ls = function()
           local nvim_lsp = require('lspconfig')
           nvim_lsp.ts_ls.setup {
@@ -51,6 +53,7 @@ return {
             single_file_support = false
           }
         end,
+        -- Zig ??
         zls = function()
           local lspconfig = require("lspconfig")
           lspconfig.zls.setup({
@@ -66,6 +69,7 @@ return {
           vim.g.zig_fmt_parse_errors = 0
           vim.g.zig_fmt_autosave = 0
         end,
+        -- Lua Lsp
         ["lua_ls"] = function()
           local lspconfig = require("lspconfig")
           lspconfig.lua_ls.setup {

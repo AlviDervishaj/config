@@ -64,7 +64,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec alacritty
 bindsym $mod+w exec warp-terminal
 bindsym $mod+m exec i3lock
 bindsym $mod+b exec firefox
@@ -221,13 +221,11 @@ client.urgent            $peach    $base  $peach   $overlay0  $peach
 client.placeholder       $overlay0 $base  $text    $overlay0  $overlay0
 client.background        $base
 bar {
-    status_command i3status
-    separator_symbol "||"
+    status_command i3status  --config ~/.config/i3/i3status.conf
+    separator_symbol "|"
+    workspace_min_width 50
     tray_output tray
-    i3bar_command i3bar --transparency
-    colors {
-        background "#24273A"
-    }
+    i3bar_command i3bar
 }
 
 
