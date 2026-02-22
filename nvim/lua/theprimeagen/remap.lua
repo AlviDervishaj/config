@@ -25,9 +25,8 @@ vim.keymap.set("n", "<leader>svwm", function()
 end)
 
 -- greatest remap ever
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "p", [["_dP]])
 
--- next greatest remap ever : asbjornHaland
 vim.keymap.set({ "n", "v" }, "y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 

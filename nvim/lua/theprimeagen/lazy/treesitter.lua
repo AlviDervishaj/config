@@ -7,7 +7,7 @@ return {
             require("nvim-treesitter.config").setup({
                 -- A list of parser names, or "all"
                 ensure_installed = {
-                    "vimdoc", "javascript", "typescript", "c", "lua", "rust",
+                    "vimdoc", "javascript", "typescript", "tsx", "c", "lua", "rust",
                     "jsdoc", "bash", "go",
                 },
 
@@ -42,30 +42,14 @@ return {
                             return true
                         end
                     end,
-
-                    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-                    -- Set this to `true` if you depend on "syntax" being enabled (like for indentation).
-                    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-                    -- Instead of true it can also be a list of languages
-                    additional_vim_regex_highlighting = { "markdown" },
                 },
             })
 
-            local treesitter_parser_config = require("nvim-treesitter").get_installed({'parsers'})
-            treesitter_parser_config.templ = {
-                install_info = {
-                    url = "https://github.com/vrischmann/tree-sitter-templ.git",
-                    files = {"src/parser.c", "src/scanner.c"},
-                    branch = "master",
-                },
-            }
-
-            vim.treesitter.language.register("templ", "templ")
             vim.api.nvim_create_autocmd("FileType", {
-                pattern = { 'typescript,jsx,tsx' },
+                pattern = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
                 callback = function()
-                    vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-                    vim.wo[0][0].foldmethod = 'expr'
+                    vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+                    vim.wo.foldmethod = "expr"
                 end,
             })
 
